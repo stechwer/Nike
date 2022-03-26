@@ -357,6 +357,12 @@ template {
     font-weight: 400;
 }
 @font-face {
+    font-family: "Bebas Neue Bold", sans-serif;
+    src: url(../fonts/AnyConv.com__BebasNeue\ Bold.woff2), url(../fonts/AnyConv.com__BebasNeue\ Bold.woff);
+    font-display: swap;
+    font-weight: 700;
+}
+@font-face {
     font-family: "Gilroy-Regular", sans-serif;
     src: url(../fonts/AnyConv.com__Gilroy-Regular.woff2), url(../fonts/AnyConv.com__Gilroy-Regular.woff);
     font-display: swap;
@@ -659,22 +665,22 @@ input[type="checkbox"] {
     height: 62px;
     position: relative;
 }
-.header-scroll{
+.header-scroll {
     font-family: "Gilroy-Regular", sans-serif;
     position: relative;
-    z-index:10;
+    z-index: 10;
     transform: rotate(90deg);
     font-size: 16px;
     line-height: 26px;
     color: #fff;
-    right:15px;
+    right: 15px;
 }
-.header-scroll::before{
+.header-scroll::before {
     content: url(../images/mouse.svg);
-    position:absolute;
-    right:-30px;
+    position: absolute;
+    right: -30px;
 }
-.header-buttons{
+.header-buttons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
@@ -702,15 +708,183 @@ input[type="checkbox"] {
 .header-socials__list {
     display: inline-block;
 }
-.header-socials__link svg  path{
-    fill:white;
+.header-socials__link svg path {
+    fill: white;
 }
-.header-socials__link svg  path:hover{
-    fill:#ff9a00;
+.header-socials__link svg path:hover {
+    fill: #ff9a00;
 }
 .header-socials__list + .header-socials__list {
     margin-left: 32px;
 }
+.feature-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-image {
+    padding: 270px 0px;
+    background: linear-gradient(107.81deg, #0047ff -0.31%, #ec00e2 100%);
+    box-shadow: 0px 40px 60px rgba(95, 42, 243, 0.2);
+}
+.feature-content {
+    width: 62%;
+    padding: 154px 190px 156px;
+    background: linear-gradient(138.68deg, #f7f7f7 0%, rgba(247, 247, 247, 0) 101.66%);
+}
+.feature-content__intro {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    color: #851fef;
+    margin-bottom: 20px;
+}
+.feature-content__title {
+    width: 100%;
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 48px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #1f170a;
+    max-width: 516px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.feature-content__text {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+    max-width: 520px;
+    color: #3e3e3e;
+    margin-bottom: 50px;
+}
+.feature-colors {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.feature-colors__text {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #1f170a;
+}
+.feature-colors__menu {
+    display: flex;
+}
+.feature-colors__list {
+    border-radius: 50%;
+}
+.feature-colors__link {
+    width: 21px;
+    height: 21px;
+}
+.feature-colors__list:nth-child(1) {
+    background-color: #dfd2bf;
+}
+.feature-colors__list:nth-child(2) {
+    background-color: #dba82f;
+}
+.feature-colors__list:nth-child(3) {
+    background-color: #ffef5a;
+}
+.feature-colors__list:nth-child(4) {
+    background-color: #5aceff;
+}
+.feature-colors__list + .feature-colors__list {
+    margin-left: 14px;
+}
+.feature-size {
+    width: 465px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 23px;
+    border-top: 1px solid rgba(62, 62, 62, 0.2);
+    margin-bottom: 56px;
+}
+.feature-button__menu {
+    display: flex;
+}
+.feature-size__text {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #1f170a;
+}
+.feature-button__list + .feature-button__list {
+    margin-left: 21px;
+}
+.feature-button__link {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border: 1px solid rgba(62, 62, 62, 0.3);
+}
+.feature-button {
+    text-align: center;
+    color: #3e3e3e;
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    border: 2px solid rgba(236, 0, 226, 1);
+    font-weight: 700;
+    position: relative;
+}
+.feature-button-left {
+    padding: 21px 53px 21px 28px;
+}
+.feature-button-right {
+    padding: 21px 67px 21px 39px;
+}
+.feature-button + .feature-button {
+    margin-left: 30px;
+}
+.feature-button:hover {
+    background: linear-gradient(108.16deg, #faff00 -1.06%, #ec00e2 100%);
+    color: #fff;
+}
+.feature-button-left::before {
+    content: url(../images/feature-bag.svg);
+    position: absolute;
+    right: 27px;
+}
+.feature-button-right::before {
+    content: url(../images/feature-heart.svg);
+    position: absolute;
+    right: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1500px) {
     .header-shoes {
         position: static;
@@ -720,13 +894,39 @@ input[type="checkbox"] {
     .header-image {
         background: linear-gradient(108.22deg, #fbff41 -0.67%, #ec00e2 100%);
     }
-    .header-socials,.header-scroll{
+    .header-socials,
+    .header-scroll {
         display: none;
     }
-    .header-buttons{
-        padding-bottom:0px;
+    .header-buttons {
+        padding-bottom: 0px;
     }
     .header-content {
         padding: 150px 0px 50px;
+    }
+    .header-shoes {
+        height:unset;
+    }
+}
+@media (max-width: 1330px) {
+    .feature-inner{
+        flex-direction: column;
+    }
+    .feature-content{
+        width: 100%;
+        order:1;
+    }
+    .feature-image{
+        order:2;
+    }
+    .feature-image{
+        width: 100%;
+        padding: 120px 0px;
+    }
+    .feature-img{
+        margin: 0 auto;
+    }
+    .feature-image{
+        padding: 0;
     }
 }
