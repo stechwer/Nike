@@ -737,7 +737,6 @@ input[type="checkbox"] {
     font-size: 20px;
     line-height: 23px;
     text-transform: uppercase;
-    text-transform: uppercase;
     color: #851fef;
     margin-bottom: 20px;
 }
@@ -869,16 +868,131 @@ input[type="checkbox"] {
     position: absolute;
     right: 27px;
 }
-
-
-
-
-
-
-
-
-
-
+.categorys{
+    padding:170px 0px 190px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.categorys__intro{
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #851fef;
+    margin-bottom: 30px;
+}
+.categorys__title{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    line-height: 72px;
+    color: #1F170A;
+    margin-bottom: 60px;
+}
+.categorys-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.categorys-item{
+    padding:24px;
+    width: 265px;
+    box-shadow: 30px 20px 45px rgba(0, 0, 1, 0.03);
+}
+.categorys-item__img{
+    display: block;
+    width: 100%;
+    min-height:200px;
+    position: relative;
+}
+.categorys-item{
+    position: relative;
+    transition: all .3s;
+}
+.categorys-item::before{
+    content:"";
+    position:absolute;
+    width: 147px;
+    height: 147px;
+    top: 75px;
+    right: 50px;
+    border-radius: 50%;
+    background: #E0E1E6;
+}
+.categorys-item:hover::before{
+    background: #FFD0C4;
+}
+.categorys-colors {
+    padding:31px 0px 18px;
+    width: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    margin: 0 auto;
+}
+.categorys-colors__menu {
+    display: flex;
+}
+.categorys-colors__list {
+    border-radius: 50%;
+}
+.categorys-colors__link {
+    width: 15px;
+    height: 11px;
+}
+.categorys-colors__list:nth-child(1) {
+    background-color: #dfd2bf;
+}
+.categorys-colors__list:nth-child(2) {
+    background-color: #dba82f;
+}
+.categorys-colors__list:nth-child(3) {
+    background-color: #ffef5a;
+}
+.categorys-colors__list:nth-child(4) {
+    background-color: #5aceff;
+}
+.categorys-colors__list + .categorys-colors__list {
+    margin-left:10px;
+}
+.categorys-item__title{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    color: #3A2E39;
+    margin-bottom:15px;
+}
+.categorys-item__sale{
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    display: block;
+    color: #FF3D00;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.categorys-btn{
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    padding:15px 35px 15px 14px;
+    color:rgb(128,0,128);
+    font-weight: 700;
+    margin:0 auto;
+    width: 150px;
+    border:1px solid rgb(128,0,128);
+    transition: all .3s;
+    position: relative;
+}
+.categorys-btn:hover{
+    background-color: cornflowerblue;
+}
+.categorys-btn::before{
+    content:url(../images/product-curt.svg);
+    position:absolute;
+    width: 15px;
+    right: 15px;
+}
 
 
 
