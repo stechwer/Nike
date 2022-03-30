@@ -1037,8 +1037,85 @@ input[type="checkbox"] {
 .shop-btn:hover{
     background:deepskyblue;
 }
-
-
+.footer{
+    padding: 85px 0px;
+    background: #02083C;
+}
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    margin-bottom: 27px;
+}
+.footer__text{
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 72px;
+}
+.footer-label{
+    display: block;
+    position: relative;
+}
+.footer-label::before{
+    content:url(../images/arrow-right.svg);
+    position:absolute;
+    right: 0;
+    top: 12px;
+}
+.footer__input{
+    font-family: "Gilroy-Medium", sans-serif;
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color:transparent;
+    border-bottom:1px solid #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+    padding: 12px 25px 12px 12px;
+}
+.footer__title{
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.footer-list+.footer-list{
+    padding-top:20px;
+}
+.footer-link{
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.footer-link:hover{
+    opacity: 1;
+}
+.social-menu{
+    display: flex;
+}
+.social-list+.social-list{
+    margin-left: 40px;
+}
+.social-menu svg path{
+    fill: #FFFFFF;
+    opacity: 0.7;
+}
+.social-menu svg path:hover{
+    opacity: 1;
+}
 @media (max-width: 1500px) {
     .header-shoes {
         position: static;
